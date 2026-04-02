@@ -1,6 +1,6 @@
 # code-agent-java
 
-一个面向简历项目设计的 Java 版代码任务智能体项目。这个项目定位为我在学习 AI Agent 运行机制和 tool-calling 之后，独立实现的一版 mini 复刻与工程化落地，按 `Spring Boot + MySQL + MVC + DDD` 组织为后端工程，并补了可交互 CLI。
+一个 Java 版代码任务智能体项目。这个项目定位为我在学习 AI Agent 运行机制和 tool-calling 之后，尝试做的一版 mini 复现与工程化实现，按 `Spring Boot + MySQL + MVC + DDD` 组织为后端工程，并补了可交互 CLI。
 
 ## 项目定位
 
@@ -110,6 +110,6 @@ mvn spring-boot:run
 - `run_shell` 超时后的部分结果保留
 - 历史 `tool` 消息规范化，降低旧会话恢复时的协议错误概率
 
-## 简历表述
+## 项目概述
 
 基于 Spring Boot + MySQL 设计并实现代码任务智能体系统，采用 MVC + DDD 架构对任务、会话、工具调用与事件日志进行领域建模，支持 OpenAI-compatible 模型接入、原生 tool-calling、多轮会话回放、失败重试、流式 CLI 交互与 REST/CLI 双入口执行链路。
