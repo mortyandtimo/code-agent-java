@@ -1,0 +1,26 @@
+server:
+  port: 18081
+
+spring:
+  datasource:
+    url: jdbc:h2:mem:code_agent_java;MODE=MySQL;DB_CLOSE_DELAY=-1;DATABASE_TO_LOWER=TRUE
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    open-in-view: false
+  flyway:
+    enabled: false
+
+code-agent:
+  cli:
+    enabled: false
+  llm:
+    base-url: https://api.openai.com/v1
+    api-key: ${CODE_AGENT_API_KEY:}
+    model: gpt-4o-mini
+    timeout-seconds: 60
+  shell:
+    timeout-seconds: 30

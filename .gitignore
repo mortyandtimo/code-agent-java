@@ -1,0 +1,14 @@
+.idea/
+.vscode/
+
+target/
+.m2repo/
+
+outputs/
+run.log
+config/local.env
+
+*.log
+*.class
+
+# Local env / machine-specific launch helpers can stay tracked when intentional.
