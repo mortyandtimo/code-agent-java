@@ -1,7 +1,7 @@
 # code-agent-java Requirement Freeze
 
 ## Goal
-Build a Java resume-ready code agent backend inspired by claude-code-from-scratch.
+Build a Java resume-ready code agent backend as a mini recreation project after studying how coding agents and tool-calling loops work.
 
 ## Deliverable
 A Spring Boot project using MVC at the interface layer and DDD in the core domain, with REST API, thin CLI, MySQL persistence, basic LLM gateway integration, and auditable task/session/event flow.

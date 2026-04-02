@@ -1,6 +1,6 @@
 # code-agent-java
 
-一个面向简历项目设计的 Java 版代码任务智能体项目，参考 `claude-code-from-scratch` 的最小 agent loop 思路，但按 `Spring Boot + MySQL + MVC + DDD` 重新组织为后端工程，并补了可交互 CLI。
+一个面向简历项目设计的 Java 版代码任务智能体项目。这个项目定位为我在学习 AI Agent 运行机制和 tool-calling 之后，独立实现的一版 mini 复刻与工程化落地，按 `Spring Boot + MySQL + MVC + DDD` 组织为后端工程，并补了可交互 CLI。
 
 ## 项目定位
 
