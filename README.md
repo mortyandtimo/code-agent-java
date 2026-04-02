@@ -1,6 +1,6 @@
 # code-agent-java
 
-一个 Java 版代码任务智能体项目。这个项目定位为我在学习 AI Agent 运行机制和 tool-calling 之后，尝试做的一版 mini 复现与工程化实现，按 `Spring Boot + MySQL + MVC + DDD` 组织为后端工程，并补了可交互 CLI。
+一个 Java 版代码任务智能体项目。这个项目定位为我在学习 AI Agent 运行机制和 tool-calling 之后，尝试做的一版 mini 复现与工程化实现，按 `Spring Boot + MySQL + DDD` 组织为后端工程，并补了可交互 CLI。
 
 ## 项目定位
 
@@ -18,7 +18,7 @@
 已完成：
 
 - Maven 项目初始化
-- MVC + DDD 包结构
+- DDD 分层包结构
 - MySQL/Flyway 建表脚本
 - task/session/event 三类持久化模型
 - REST API: `POST /api/tasks`、`POST /api/tasks/{id}/resume`、`GET /api/tasks/{id}`、`GET /api/tasks/{id}/events`
@@ -86,7 +86,7 @@ mvn spring-boot:run
 
 ## 目录结构
 
-- `src/main/java`：MVC + DDD 主体代码
+- `src/main/java`：DDD 主体代码
 - `src/main/resources`：应用配置、数据库迁移、系统提示词
 - `src/test/java`：WebMvc、重试、工具确认等测试
 - `config/config.example.env`：通用配置模板，占位符示例
@@ -112,4 +112,4 @@ mvn spring-boot:run
 
 ## 项目概述
 
-基于 Spring Boot + MySQL 设计并实现代码任务智能体系统，采用 MVC + DDD 架构对任务、会话、工具调用与事件日志进行领域建模，支持 OpenAI-compatible 模型接入、原生 tool-calling、多轮会话回放、失败重试、流式 CLI 交互与 REST/CLI 双入口执行链路。
+基于 Spring Boot + MySQL 设计并实现代码任务智能体系统，采用 DDD 架构对任务、会话、工具调用与事件日志进行领域建模，支持 OpenAI-compatible 模型接入、原生 tool-calling、多轮会话回放、失败重试、流式 CLI 交互与 REST/CLI 双入口执行链路。
